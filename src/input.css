@@ -4,11 +4,11 @@
 
 
 body{
-    @apply font-roboto container mx-auto
+    @apply font-roboto
 }
 
 .nav{
-    @apply flex justify-between 
+    @apply flex justify-between pt-2 mx-[140px]
 }
 .nav__content{
     @apply flex gap-x-52
@@ -16,9 +16,168 @@ body{
 .nav__links{
     @apply text-lg flex gap-x-7 items-center
 }
-.nav__btn {
-    @apply pt-2
+.nav__btn, .hero__btn, .impressions__btn, .footer__btn, .footer__form-btn{
+    @apply bg-darkish px-10 py-4 rounded-[12px] text-white p-2
 }
 .nav__logo{
     @apply font-extrabold text-4xl
+}
+.hero{
+    @apply  bg-hero-pattern pt-40 text-center mx-[140px]
+}
+.hero__text-big{
+    @apply text-6xl font-bold mx-60
+}
+.hero__text-small{
+    @apply text-lg  pt-10 mx-56
+}
+.hero__form{
+    @apply pt-10 
+}
+.hero__form-content{
+    @apply bg-white mx-80 flex justify-between py-[8px] rounded-[12px]
+}
+.hero__btn--margin{
+    @apply mr-3
+}
+.hero__input{
+    @apply py-5 px-5 w-96 outline-none
+}
+.hero__img{
+    @apply pt-20
+}
+.quality{
+    @apply pt-20 text-center mx-[140px]
+}
+.quality__text-small, .work__title, .discover__title{
+    @apply text-transparent bg-clip-text bg-gradient-to-br from-blue-700 via-blue-400  to-teal-100 text-3xl font-bold
+}
+.quality__text-big, .features__title, .testimony__title{
+    @apply text-5xl text-center font-bold pt-5 mx-[20rem] leading-normal
+}
+.cards{
+    @apply grid grid-cols-3 gap-x-7 rounded-[35px]  mt-14 py-14 px-14 bg-lightViolet mx-[140px]
+}
+.cards__card{
+    @apply space-y-5
+}
+.cards__text-big, .features__text-big{
+    @apply text-4xl font-bold
+}
+.work, .discover{
+    @apply my-24  mx-[140px]
+}
+.work__content, .discover__content{
+    @apply flex gap-x-20
+}
+.work__left, .discover__left{
+    @apply w-1/2 pt-10
+}
+.work__right, .discover__right{
+    @apply w-1/2 flex flex-col justify-between
+}
+.work__icon, .discover__icon{
+    @apply mr-5 inline-flex
+}
+.work__right-item, .discover__right-item{
+    @apply flex
+}
+.work__text-big, .impressions__text-big, .discover__text-big{
+    @apply text-5xl font-bold leading-[4rem] pb-5
+}
+.work__right-text, .discover__right-text{
+    @apply text-xl font-semibold
+}
+.impressions{
+    @apply flex items-center bg-gradient-to-br from-teal-100 via-teal-50  to-slate-100 py-20 px-[140px]
+}
+.impressions__left{
+    @apply w-1/2
+}
+.impressions__right{
+    @apply w-1/2
+}
+.impressions__text-small{
+    @apply pb-10
+}
+.logos{
+    @apply flex justify-between gap-x-10 mx-[140px] pt-14
+}
+.discover__right-text--size{
+    @apply text-lg
+}
+.discover__right-title{
+    @apply text-2xl font-bold
+}
+.features{
+    @apply mx-[100px] my-20
+}
+.features__cards{
+    @apply grid grid-cols-3 gap-x-7 rounded-[35px]  mt-14 py-14 px-14 bg-red-50
+}
+.features__card{
+    @apply space-y-5 border-r-neutral-300 border-r-4 px-5
+}
+.features__card--noborder{
+    @apply border-none
+}
+.features__text-small{
+    @apply text-xl
+}
+.testimony{
+    @apply mx-[110px]
+}
+.testimony__cards{
+    @apply grid grid-cols-3 gap-x-10 mt-20
+}
+.testimony__card{
+    @apply flex flex-col items-center px-14 py-10 rounded-[25px] border-slate-300 border-2
+}
+.testimony__paragraph{
+    @apply text-lg font-semibold
+}
+.testimony__img{
+    @apply pt-8
+}
+.testimony__name{
+    @apply text-xl font-bold pt-5
+}
+.footer{
+    @apply bg-hero-pattern pt-20 pb-32 text-center
+}
+.footer__text-big{
+    @apply text-6xl font-bold mx-[22rem] 
+}
+.footer__text-small{
+    @apply  py-10
+}
+.footer__content{
+    @apply bg-darkish text-white px-[80px] py-20 grid grid-cols-5
+}
+.footer__col-title{
+    @apply text-xl font-semibold
+}
+.footer__links{
+    @apply flex flex-col text-neutral-400 pt-2 space-y-2
+}
+.footer__link{
+    @apply text-lg
+}
+.footer__col--span{
+    @apply col-span-2
+}
+.footer__logo{
+    @apply text-4xl font-bold pb-10
+}
+.footer__form-content{
+    @apply pt-5 pr-28
+}
+.footer__form{
+    @apply bg-[#2B2E3C] rounded-[15px] flex justify-between
+}
+.footer__form-btn--color{
+    @apply bg-white text-black font-semibold
+}
+.footer__input{
+    @apply bg-[#2B2E3C] px-4 rounded-[15px]
 }
