@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    @apply font-roboto container mx-auto
+}
+
+.nav{
+    @apply flex justify-between 
+}
+.nav__content{
+    @apply flex gap-x-52
+}
+.nav__links{
+    @apply text-lg flex gap-x-7 items-center
+}
+.nav__btn {
+    @apply pt-2
+}
+.nav__logo{
+    @apply font-extrabold text-4xl
+}
