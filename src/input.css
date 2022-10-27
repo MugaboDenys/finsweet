@@ -17,7 +17,7 @@ body{
     @apply text-lg flex gap-x-7 items-center
 }
 .nav__btn, .hero__btn, .impressions__btn, .footer__btn, .footer__form-btn{
-    @apply bg-darkish px-10 py-4 rounded-[12px] text-white p-2
+    @apply bg-darkish px-10 py-4 rounded-[12px] text-white p-2 hover:bg-darkishHover
 }
 .nav__logo{
     @apply font-extrabold text-4xl
@@ -176,8 +176,8 @@ body{
     @apply bg-[#2B2E3C] rounded-[15px] flex justify-between
 }
 .footer__form-btn--color{
-    @apply bg-white text-black font-semibold
+    @apply bg-white text-black font-semibold hover:bg-darkish hover:text-white
 }
 .footer__input{
-    @apply bg-[#2B2E3C] px-4 rounded-[15px]
+    @apply bg-[#2B2E3C] px-4 rounded-[15px] outline-none
 }
