@@ -16,7 +16,7 @@ body{
 .nav__links{
     @apply text-lg flex gap-x-7 items-center
 }
-.nav__btn, .hero__btn, .impressions__btn, .footer__btn, .footer__form-btn{
+.nav__btn, .hero__btn, .impressions__btn, .footer__btn, .footer__form-btn, .products-hero__btn, .pricing-hero__montly, .pricing-hero__card-btn{
     @apply bg-darkish px-10 py-4 rounded-[12px] text-white p-2 hover:bg-darkishHover
 }
 .nav__logo{
@@ -49,10 +49,10 @@ body{
 .quality{
     @apply pt-20 text-center mx-[140px]
 }
-.quality__text-small, .work__title, .discover__title{
-    @apply text-transparent bg-clip-text bg-gradient-to-br from-blue-700 via-blue-400  to-teal-100 text-3xl font-bold
+.quality__text-small, .work__title, .discover__title, .feedback__title{
+    @apply text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 to-teal-300 text-3xl font-bold
 }
-.quality__text-big, .features__title, .testimony__title{
+.quality__text-big, .features__title, .testimony__title, .services__title{
     @apply text-5xl text-center font-bold pt-5 mx-[20rem] leading-normal
 }
 .cards{
@@ -143,7 +143,7 @@ body{
     @apply text-xl font-bold pt-5
 }
 .footer{
-    @apply bg-hero-pattern pt-20 pb-32 text-center
+    @apply bg-hero-pattern pt-20 text-center
 }
 .footer__text-big{
     @apply text-6xl font-bold mx-[22rem] 
@@ -152,7 +152,10 @@ body{
     @apply  py-10
 }
 .footer__content{
-    @apply bg-darkish text-white px-[80px] py-20 grid grid-cols-5
+    @apply bg-darkish mt-32 text-left
+}
+.footer__cols{
+    @apply text-white px-[80px] py-20 grid grid-cols-5 
 }
 .footer__col-title{
     @apply text-xl font-semibold
@@ -180,4 +183,166 @@ body{
 }
 .footer__input{
     @apply bg-[#2B2E3C] px-4 rounded-[15px] outline-none
+}
+.footer__copyright{
+    @apply text-neutral-300 flex justify-between items-center px-[80px] pb-20
+}
+.footer__empty-div{
+    @apply border-b-2 border-b-neutral-500 w-[30rem]
+}
+.footer__copyright-content{
+    @apply flex gap-x-3
+}
+.footer__img{
+    @apply w-5 h-5
+}
+
+ /*=============================== products page ============================================== */
+
+.products-hero{
+    @apply mx-[110px] bg-hero-pattern bg-contain bg-left
+}
+.products-hero__content{
+    @apply flex items-center pt-20 gap-x-20
+}
+.products-hero__title{
+    @apply text-6xl font-bold
+}
+.products-hero__paragraph, .feedback__paragraph{
+    @apply text-lg
+}
+.products-hero__right{
+    @apply w-1/2
+}
+.products-hero__left{
+    @apply w-1/2 space-y-10
+}
+.products-hero__btns{
+    @apply flex gap-x-5
+}
+.products-hero__btn--light{
+    @apply bg-white text-black font-semibold hover:bg-darkish hover:text-white border-4 duration-300
+}
+.logos--products{
+    @apply py-20
+}
+.services__cards{
+    @apply grid grid-cols-3 gap-10 mt-20 bg-white bg-opacity-60 p-20 rounded-tr-[4rem]
+}
+.services__card{
+    @apply space-y-3
+}
+.services__card-title{
+    @apply text-2xl font-bold
+}
+.services{
+    @apply bg-gradient-to-br from-teal-100 via-indigo-100  to-slate-50 pt-20 pr-[80px]
+}
+.feedback{
+    @apply px-[80px] flex gap-x-20 pt-28 items-center bg-hero-pattern bg-contain 
+}
+.feedback__left{
+    @apply w-1/2 space-y-5 pr-20
+}
+.feedback__right{
+    @apply w-1/2 pr-32
+}
+.feedback__img{
+    @apply w-[30rem]
+}
+.feedback__text-big, .pricng-hero__text-big, .faq__text-big{
+    @apply text-5xl font-bold
+}
+.feedback--lead{
+    @apply bg-white
+}
+.pricing-hero{
+    @apply px-[80px] pt-20 bg-hero-pattern
+}
+.pricing-hero__text{
+    @apply w-[500px] mx-auto
+}
+.pricng-hero__text-big{
+    @apply text-6xl font-bold text-center
+}
+.pricing-hero__text-small{
+    @apply text-lg pt-10 text-center px-20
+}
+.pricing-hero__btns{
+    @apply mx-auto my-10
+}
+.pricing-hero__plans{
+    @apply bg-lightViolet w-[300px] mx-auto py-5 px-2 rounded-[15px]
+}
+.pricing-hero__yearly{
+    @apply ml-10 font-bold
+}
+.pricing-hero__cards{
+    @apply flex gap-x-10
+}
+.pricing-hero__card{
+    @apply  bg-white w-1/3 rounded-[30px] pb-16
+}
+.pricing-hero__card-header{
+    @apply flex gap-x-5 py-16 border-b-4 px-10
+}
+.pricing-hero__card-title {
+    @apply text-4xl font-bold
+}
+.pricing-hero__card-subtitle{
+    @apply text-lg
+}
+.pricing-hero__card-body{
+    @apply space-y-5 py-10 px-10
+}
+.pricing-hero__card-content{
+    @apply flex gap-x-5
+}
+.pricing-hero__card-plan{
+    @apply text-lg font-bold
+}
+.pricing-hero__card-paragraph{
+    @apply px-20 text-center pb-10
+}
+.pricing-hero__card-description{
+    @apply text-4xl font-bold
+}
+.pricing-hero__card-period{
+    @apply pb-10
+}
+.pricing-hero__card-footer{
+    @apply text-center
+}
+.pricing-hero__card--different{
+    @apply bg-transparent border-blue-600 border-[6px]
+}
+.faq{
+    @apply  px-16 mx-24 mt-32 flex gap-x-10 bg-lightViolet py-20 rounded-[2rem] 
+}
+.faq__left{
+    @apply w-[800px] space-y-12
+}
+.faq__right{
+    @apply space-y-3
+}
+.faq__card{
+    @apply bg-white px-10 py-10 rounded-[2rem]
+}
+.faq__card-header{
+    @apply flex justify-between items-center
+}
+.faq__card-title{
+    @apply text-2xl font-bold pb-8
+}
+.contact-hero{
+    @apply mt-20
+}
+.contact-hero__title{
+    @apply text-6xl font-bold text-center
+}
+.contact-hero{
+    @apply bg-hero-pattern
+}
+.contact-hero__card{
+    @apply mx-[80px] px-16 py-20
 }

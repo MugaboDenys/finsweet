@@ -541,7 +541,7 @@ body {
   line-height: 1.75rem;
 }
 
-.nav__btn, .hero__btn, .impressions__btn, .footer__btn, .footer__form-btn {
+.nav__btn, .hero__btn, .impressions__btn, .footer__btn, .footer__form-btn, .products-hero__btn, .pricing-hero__montly, .pricing-hero__card-btn {
   border-radius: 12px;
   --tw-bg-opacity: 1;
   background-color: rgb(29 33 48 / var(--tw-bg-opacity));
@@ -554,7 +554,7 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.nav__btn:hover, .hero__btn:hover, .impressions__btn:hover, .footer__btn:hover, .footer__form-btn:hover {
+.nav__btn:hover, .hero__btn:hover, .impressions__btn:hover, .footer__btn:hover, .footer__form-btn:hover, .products-hero__btn:hover, .pricing-hero__montly:hover, .pricing-hero__card-btn:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(49 56 82 / var(--tw-bg-opacity));
 }
@@ -630,14 +630,12 @@ body {
   text-align: center;
 }
 
-.quality__text-small, .work__title, .discover__title {
+.quality__text-small, .work__title, .discover__title, .feedback__title {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
-  --tw-gradient-from: #1d4ed8;
-  --tw-gradient-to: rgb(29 78 216 / 0);
+  --tw-gradient-from: #4f46e5;
+  --tw-gradient-to: rgb(79 70 229 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  --tw-gradient-to: rgb(96 165 250 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), #60a5fa, var(--tw-gradient-to);
-  --tw-gradient-to: #ccfbf1;
+  --tw-gradient-to: #5eead4;
   -webkit-background-clip: text;
           background-clip: text;
   font-size: 1.875rem;
@@ -646,7 +644,7 @@ body {
   color: transparent;
 }
 
-.quality__text-big, .features__title, .testimony__title {
+.quality__text-big, .features__title, .testimony__title, .services__title {
   margin-left: 20rem;
   margin-right: 20rem;
   padding-top: 1.25rem;
@@ -874,7 +872,6 @@ body {
 .footer {
   background-image: url('/src/BlurGradient.png');
   padding-top: 5rem;
-  padding-bottom: 8rem;
   text-align: center;
 }
 
@@ -892,10 +889,15 @@ body {
 }
 
 .footer__content {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin-top: 8rem;
   --tw-bg-opacity: 1;
   background-color: rgb(29 33 48 / var(--tw-bg-opacity));
+  text-align: left;
+}
+
+.footer__cols {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   padding-left: 80px;
   padding-right: 80px;
   padding-top: 5rem;
@@ -979,4 +981,407 @@ body {
   padding-right: 1rem;
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.footer__copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 5rem;
+  --tw-text-opacity: 1;
+  color: rgb(212 212 212 / var(--tw-text-opacity));
+}
+
+.footer__empty-div {
+  width: 30rem;
+  border-bottom-width: 2px;
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(115 115 115 / var(--tw-border-opacity));
+}
+
+.footer__copyright-content {
+  display: flex;
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
+}
+
+.footer__img {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+/*=============================== products page ============================================== */
+
+.products-hero {
+  margin-left: 110px;
+  margin-right: 110px;
+  background-image: url('/src/BlurGradient.png');
+  background-size: contain;
+  background-position: left;
+}
+
+.products-hero__content {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+  padding-top: 5rem;
+}
+
+.products-hero__title {
+  font-size: 3.75rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.products-hero__paragraph, .feedback__paragraph {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.products-hero__right {
+  width: 50%;
+}
+
+.products-hero__left {
+  width: 50%;
+}
+
+.products-hero__left > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
+}
+
+.products-hero__btns {
+  display: flex;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+}
+
+.products-hero__btn--light {
+  border-width: 4px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+  transition-duration: 300ms;
+}
+
+.products-hero__btn--light:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 33 48 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.logos--products {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.services__cards {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2.5rem;
+  border-top-right-radius: 4rem;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.6;
+  padding: 5rem;
+}
+
+.services__card > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+
+.services__card-title {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.services {
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+  --tw-gradient-from: #ccfbf1;
+  --tw-gradient-to: rgb(204 251 241 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: rgb(224 231 255 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), #e0e7ff, var(--tw-gradient-to);
+  --tw-gradient-to: #f8fafc;
+  padding-top: 5rem;
+  padding-right: 80px;
+}
+
+.feedback {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+  background-image: url('/src/BlurGradient.png');
+  background-size: contain;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 7rem;
+}
+
+.feedback__left {
+  width: 50%;
+}
+
+.feedback__left > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}
+
+.feedback__left {
+  padding-right: 5rem;
+}
+
+.feedback__right {
+  width: 50%;
+  padding-right: 8rem;
+}
+
+.feedback__img {
+  width: 30rem;
+}
+
+.feedback__text-big, .pricng-hero__text-big, .faq__text-big {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.feedback--lead {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.pricing-hero {
+  background-image: url('/src/BlurGradient.png');
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 5rem;
+}
+
+.pricing-hero__text {
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+}
+
+.pricng-hero__text-big {
+  text-align: center;
+  font-size: 3.75rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.pricing-hero__text-small {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 2.5rem;
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.pricing-hero__btns {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.pricing-hero__plans {
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  border-radius: 15px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 228 252 / var(--tw-bg-opacity));
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.pricing-hero__yearly {
+  margin-left: 2.5rem;
+  font-weight: 700;
+}
+
+.pricing-hero__cards {
+  display: flex;
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
+}
+
+.pricing-hero__card {
+  width: 33.333333%;
+  border-radius: 30px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-bottom: 4rem;
+}
+
+.pricing-hero__card-header {
+  display: flex;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+  border-bottom-width: 4px;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.pricing-hero__card-title {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+}
+
+.pricing-hero__card-subtitle {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.pricing-hero__card-body > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}
+
+.pricing-hero__card-body {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.pricing-hero__card-content {
+  display: flex;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+}
+
+.pricing-hero__card-plan {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+.pricing-hero__card-paragraph {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 2.5rem;
+  text-align: center;
+}
+
+.pricing-hero__card-description {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+}
+
+.pricing-hero__card-period {
+  padding-bottom: 2.5rem;
+}
+
+.pricing-hero__card-footer {
+  text-align: center;
+}
+
+.pricing-hero__card--different {
+  border-width: 6px;
+  --tw-border-opacity: 1;
+  border-color: rgb(37 99 235 / var(--tw-border-opacity));
+  background-color: transparent;
+}
+
+.faq {
+  margin-left: 6rem;
+  margin-right: 6rem;
+  margin-top: 8rem;
+  display: flex;
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
+  border-radius: 2rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 228 252 / var(--tw-bg-opacity));
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.faq__left {
+  width: 800px;
+}
+
+.faq__left > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(3rem * var(--tw-space-y-reverse));
+}
+
+.faq__right > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+
+.faq__card {
+  border-radius: 2rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.faq__card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faq__card-title {
+  padding-bottom: 2rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.contact-hero {
+  margin-top: 5rem;
+}
+
+.contact-hero__title {
+  text-align: center;
+  font-size: 3.75rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.contact-hero {
+  background-image: url('/src/BlurGradient.png');
+}
+
+.contact-hero__card {
+  margin-left: 80px;
+  margin-right: 80px;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
