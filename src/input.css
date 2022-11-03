@@ -16,8 +16,8 @@ body{
 .nav__links{
     @apply text-lg flex gap-x-7 items-center
 }
-.nav__btn, .hero__btn, .impressions__btn, .footer__btn, .footer__form-btn, .products-hero__btn, .pricing-hero__montly, .pricing-hero__card-btn{
-    @apply bg-darkish px-10 py-4 rounded-[12px] text-white p-2 hover:bg-darkishHover
+.nav__btn, .hero__btn, .impressions__btn, .footer__btn, .footer__form-btn, .products-hero__btn, .pricing-hero__montly, .pricing-hero__card-btn, .contact-hero__btn{
+    @apply bg-darkish px-10 py-4 rounded-[12px] text-white p-2 hover:bg-darkishHover duration-300
 }
 .nav__logo{
     @apply font-extrabold text-4xl
@@ -49,8 +49,8 @@ body{
 .quality{
     @apply pt-20 text-center mx-[140px]
 }
-.quality__text-small, .work__title, .discover__title, .feedback__title{
-    @apply text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 to-teal-300 text-3xl font-bold
+.quality__text-small, .work__title, .discover__title, .description__title, .time__title, .lead__title, .remote__title{
+    @apply text-transparent bg-clip-text bg-gradient-to-tr from-[rgb(11,26,230)] via-[rgb(29,210,242)] to-[rgb(91,252,250)] text-3xl font-bold
 }
 .quality__text-big, .features__title, .testimony__title, .services__title{
     @apply text-5xl text-center font-bold pt-5 mx-[20rem] leading-normal
@@ -238,26 +238,32 @@ body{
 .services{
     @apply bg-gradient-to-br from-teal-100 via-indigo-100  to-slate-50 pt-20 pr-[80px]
 }
-.feedback{
-    @apply px-[80px] flex gap-x-20 pt-28 items-center bg-hero-pattern bg-contain 
+.description, .time, .lead, .remote{
+    @apply px-[80px] flex gap-x-20 pt-28 items-center   
 }
-.feedback__left{
-    @apply w-1/2 space-y-5 pr-20
+.description__left, .time__left, .lead__left, .remote__left{
+    @apply w-1/2 space-y-5 pr-20 
 }
-.feedback__right{
+.description__right, .time__right, .lead__right, .remote__right{
     @apply w-1/2 pr-32
 }
-.feedback__img{
+.description__img, .time__img, .lead__img, .remote__img{
     @apply w-[30rem]
 }
-.feedback__text-big, .pricng-hero__text-big, .faq__text-big{
+.description__text-big, .time__text-big, .lead__text-big, .remote__text-big, .pricng-hero__text-big, .faq__text-big{
     @apply text-5xl font-bold
 }
-.feedback--lead{
-    @apply bg-white
+.description__background{
+    @apply absolute -z-10 mt-[300px] right-[1000px] overflow-visible
+}
+.lead__background{
+    @apply absolute -z-10 ml-[400px]
 }
 .pricing-hero{
-    @apply px-[80px] pt-20 bg-hero-pattern
+    @apply px-[80px] pt-20 
+}
+.pricing-hero__bg{
+    @apply absolute -z-10 w-[2800px]
 }
 .pricing-hero__text{
     @apply w-[500px] mx-auto
@@ -344,5 +350,164 @@ body{
     @apply bg-hero-pattern
 }
 .contact-hero__card{
-    @apply mx-[80px] px-16 py-20
+    @apply mx-[80px] px-16 py-20 my-20 rounded-[15px] bg-lightViolet
+}
+.contact-hero__card-title{
+    @apply text-4xl font-bold
+}
+.contact-hero__card-subtitle{
+    @apply text-xl pt-5
+}
+.contact-hero__content{
+    @apply flex
+}
+.contact-hero__form{
+    @apply w-1/2 pt-10 grid grid-cols-2 gap-x-5 space-y-3
+}
+.contact-hero__item{
+    @apply py-5 px-10 text-lg font-[500] outline-none rounded-lg
+}
+.contact-hero__item--span, .contact-hero__btn--span{
+    @apply col-span-2
+}
+.contact-hero__info-item{
+    @apply flex gap-x-5
+}
+.contact-hero__info{
+    @apply pt-10 space-y-10 ml-44
+}
+.contact-hero__info-big{
+    @apply text-2xl font-bold
+}
+.contact-hero__info-small{
+    @apply text-gray-500 text-lg
+}
+.contact-hero__bg{
+    @apply absolute -z-10 -mt-[100px]
+}
+.about__bg{
+    @apply absolute -z-10 transform scale-[1.5] opacity-80
+}
+.about__title{
+    @apply text-6xl font-bold
+}
+.about__paragraph{
+    @apply text-xl pt-10
+}
+.about__header{
+    @apply pt-28 text-center w-[800px] mx-auto
+}
+.about__imgs{
+    @apply flex gap-x-5 justify-center pt-20
+}
+.about__end{
+    @apply  mx-auto text-center w-[800px]
+}
+.about__team-title, .goals__title{
+    @apply  text-2xl pt-28 font-bold text-transparent bg-clip-text bg-gradient-to-tr from-[rgb(11,26,230)] via-[rgb(29,210,242)] to-[rgb(91,252,250)] 
+}
+.about__team-subtitle, .goals__subtitle, .corporate__title, .talented__title, .trending__subtitle{
+    @apply text-5xl font-bold pt-5 
+}
+.about__team-paragraph, .goals__paragraph, .corporate__description{
+    @apply text-xl pt-7 text-gray-600
+}
+.goals{
+    @apply px-[80px] pb-20 flex gap-x-16 bg-lightViolet mt-28
+}
+.corporate{
+    @apply px-[80px]
+}
+.corporate__header{
+    @apply text-center pt-28 pb-16
+}
+.corporate__cards{
+    @apply grid grid-cols-3 gap-16 bg-[#F9F0FB] rounded-[30px] px-16 py-16
+}
+.corporate__card{
+    @apply space-y-5
+}
+.corporate__card-title{
+    @apply text-3xl font-bold
+}
+.corporate__card-paragraph{
+    @apply text-lg text-slate-600
+}
+.talented{
+    @apply px-[80px] mt-28 flex
+}
+.talented__left{
+    @apply w-1/3
+}
+.talented__paragraph{
+    @apply text-lg text-slate-600 pt-7
+}
+.talented__cards{
+    @apply grid grid-cols-3 gap-5  mb-20
+}
+.talented__card{
+    @apply bg-slate-200 rounded-[10px]
+}
+.talented__card-name{
+    @apply text-2xl font-bold pt-5 px-5
+}
+.talented__card-position{
+    @apply text-lg text-slate-600 pb-5 px-5
+}
+.blog{
+    @apply text-center pt-28
+}
+.blog__header{
+    @apply w-[750px] mx-auto
+}
+.blog__title{
+    @apply text-6xl font-bold
+}
+.blog__paragraph{
+    @apply pt-10 text-lg
+}
+.trending{
+    @apply mx-[80px] mt-12 px-16 py-20 border-2 rounded-[25px] flex gap-20 relative
+}
+.trending__bg{
+    @apply absolute -z-10 mr-[600px] opacity-60
+}
+.trending__image-bg{
+    @apply absolute -z-10 opacity-80
+}
+.trending__title{
+    @apply text-2xl pb-5 font-bold text-transparent bg-clip-text bg-gradient-to-tr from-[rgb(11,26,230)] via-[rgb(29,210,242)] to-[rgb(91,252,250)] 
+}
+.trending__text{
+    @apply w-1/2
+}
+.trending__paragraph{
+    @apply text-lg pt-7
+}
+.trending__caption{
+    @apply font-[500] text-lg pt-10
+}
+.trending__image{
+    @apply w-1/2
+}
+.trending__img{
+    @apply w-[600px] h-[350px] object-cover rounded-[25px]
+}
+.posts{
+    @apply px-[100px] pt-44 pb-24
+}
+.posts__title{
+    @apply text-center text-6xl font-bold 
+}
+.posts__cards{
+    @apply pt-20 grid grid-cols-3 gap-y-20 gap-x-5
+}
+.posts__card{
+    @apply space-y-5
+}
+.posts__card-title{
+    @apply text-2xl font-bold
+}
+.posts__card-paragraph{
+    @apply text-lg
 }
