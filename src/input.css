@@ -38,7 +38,7 @@ body{
     @apply bg-white mx-80 flex justify-between py-[8px] rounded-[12px]
 }
 .hero__btn--margin{
-    @apply mr-3
+    @apply mr-2
 }
 .hero__input{
     @apply py-5 px-5 w-96 outline-none
