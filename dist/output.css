@@ -1604,7 +1604,7 @@ body {
   color: transparent;
 }
 
-.about__team-subtitle, .goals__subtitle, .corporate__title, .talented__title, .trending__subtitle {
+.about__team-subtitle, .goals__subtitle, .corporate__title, .talented__title, .trending__subtitle, .blogpost__title {
   padding-top: 1.25rem;
   font-size: 3rem;
   line-height: 1;
@@ -1730,7 +1730,7 @@ body {
   text-align: center;
 }
 
-.blog__header {
+.blog__header, . {
   margin-left: auto;
   margin-right: auto;
   width: 750px;
@@ -1851,6 +1851,12 @@ body {
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
+.posts__card:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+  transition-duration: 500ms;
+}
+
 .posts__card-title {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1858,6 +1864,59 @@ body {
 }
 
 .posts__card-paragraph {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.blogpost {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.blogpost__header {
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+
+.blogpost__subtitle {
+  padding-top: 2.5rem;
+}
+
+.headlines {
+  margin-left: auto;
+  margin-right: auto;
+  width: 750px;
+}
+
+.headlines > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
+}
+
+.headlines {
+  padding-top: 5rem;
+}
+
+.headlines__title {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.headlines__smalltitle {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+}
+
+.headlines__paragraph--special {
+  border-left-width: 4px;
+  padding-left: 1.25rem;
   font-size: 1.125rem;
   line-height: 1.75rem;
 }

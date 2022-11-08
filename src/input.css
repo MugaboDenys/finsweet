@@ -406,7 +406,7 @@ body{
 .about__team-title, .goals__title{
     @apply  text-2xl pt-28 font-bold text-transparent bg-clip-text bg-gradient-to-tr from-[rgb(11,26,230)] via-[rgb(29,210,242)] to-[rgb(91,252,250)] 
 }
-.about__team-subtitle, .goals__subtitle, .corporate__title, .talented__title, .trending__subtitle{
+.about__team-subtitle, .goals__subtitle, .corporate__title, .talented__title, .trending__subtitle, .blogpost__title{
     @apply text-5xl font-bold pt-5 
 }
 .about__team-paragraph, .goals__paragraph, .corporate__description{
@@ -457,7 +457,7 @@ body{
 .blog{
     @apply text-center pt-28
 }
-.blog__header{
+.blog__header, .{
     @apply w-[750px] mx-auto
 }
 .blog__title{
@@ -503,11 +503,32 @@ body{
     @apply pt-20 grid grid-cols-3 gap-y-20 gap-x-5
 }
 .posts__card{
-    @apply space-y-5
+    @apply space-y-5 hover:bg-slate-100 hover:duration-500
 }
 .posts__card-title{
     @apply text-2xl font-bold
 }
 .posts__card-paragraph{
     @apply text-lg
+}
+.blogpost{
+    @apply px-[80px]
+}
+.blogpost__header{
+    @apply text-center pt-28 w-[800px] mx-auto pb-20
+}
+.blogpost__subtitle{
+    @apply pt-10
+}
+.headlines{
+    @apply w-[750px] mx-auto pt-20 space-y-7
+}
+.headlines__title{
+    @apply text-5xl font-bold
+}
+.headlines__smalltitle{
+    @apply text-4xl font-bold
+}
+.headlines__paragraph--special{
+    @apply text-lg border-l-4 pl-5
 }
