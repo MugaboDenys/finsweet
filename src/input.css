@@ -1,0 +1,534 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    @apply font-roboto
+}
+
+.nav{
+    @apply flex justify-between pt-2 mx-[140px]
+}
+.nav__content{
+    @apply flex gap-x-52
+}
+.nav__links{
+    @apply text-lg flex gap-x-7 items-center
+}
+.nav__btn, .hero__btn, .impressions__btn, .footer__btn, .footer__form-btn, .products-hero__btn, .pricing-hero__montly, .pricing-hero__card-btn, .contact-hero__btn{
+    @apply bg-darkish px-10 py-4 rounded-[12px] text-white p-2 hover:bg-darkishHover duration-300
+}
+.nav__logo{
+    @apply font-extrabold text-4xl
+}
+.hero{
+    @apply  bg-hero-pattern pt-40 text-center mx-[140px]
+}
+.hero__text-big{
+    @apply text-6xl font-bold mx-60
+}
+.hero__text-small{
+    @apply text-lg  pt-10 mx-56
+}
+.hero__form{
+    @apply pt-10 
+}
+.hero__form-content{
+    @apply bg-white mx-80 flex justify-between py-[8px] rounded-[12px]
+}
+.hero__btn--margin{
+    @apply mr-2
+}
+.hero__input{
+    @apply py-5 px-5 w-96 outline-none
+}
+.hero__img{
+    @apply pt-20
+}
+.quality{
+    @apply pt-20 text-center mx-[140px]
+}
+.quality__text-small, .work__title, .discover__title, .description__title, .time__title, .lead__title, .remote__title{
+    @apply text-transparent bg-clip-text bg-gradient-to-tr from-[rgb(11,26,230)] via-[rgb(29,210,242)] to-[rgb(91,252,250)] text-3xl font-bold
+}
+.quality__text-big, .features__title, .testimony__title, .services__title{
+    @apply text-5xl text-center font-bold pt-5 mx-[20rem] leading-normal
+}
+.cards{
+    @apply grid grid-cols-3 gap-x-7 rounded-[35px]  mt-14 py-14 px-14 bg-lightViolet mx-[140px]
+}
+.cards__card{
+    @apply space-y-5
+}
+.cards__text-big, .features__text-big{
+    @apply text-4xl font-bold
+}
+.work, .discover{
+    @apply my-24  mx-[140px]
+}
+.work__content, .discover__content{
+    @apply flex gap-x-20
+}
+.work__left, .discover__left{
+    @apply w-1/2 pt-10
+}
+.work__right, .discover__right{
+    @apply w-1/2 flex flex-col justify-between
+}
+.work__icon, .discover__icon{
+    @apply mr-5 inline-flex
+}
+.work__right-item, .discover__right-item{
+    @apply flex
+}
+.work__text-big, .impressions__text-big, .discover__text-big{
+    @apply text-5xl font-bold leading-[4rem] pb-5
+}
+.work__right-text, .discover__right-text{
+    @apply text-xl font-semibold
+}
+.impressions{
+    @apply flex items-center bg-gradient-to-br from-teal-100 via-teal-50  to-slate-100 py-20 px-[140px]
+}
+.impressions__left{
+    @apply w-1/2
+}
+.impressions__right{
+    @apply w-1/2
+}
+.impressions__text-small{
+    @apply pb-10
+}
+.logos{
+    @apply flex justify-between gap-x-10 mx-[140px] pt-14
+}
+.discover__right-text--size{
+    @apply text-lg
+}
+.discover__right-title{
+    @apply text-2xl font-bold
+}
+.features{
+    @apply mx-[100px] my-20
+}
+.features__cards{
+    @apply grid grid-cols-3 gap-x-7 rounded-[35px]  mt-14 py-14 px-14 bg-red-50
+}
+.features__card{
+    @apply space-y-5 border-r-neutral-300 border-r-4 px-5
+}
+.features__card--noborder{
+    @apply border-none
+}
+.features__text-small{
+    @apply text-xl
+}
+.testimony{
+    @apply mx-[110px]
+}
+.testimony__cards{
+    @apply grid grid-cols-3 gap-x-10 mt-20
+}
+.testimony__card{
+    @apply flex flex-col items-center px-14 py-10 rounded-[25px] border-slate-300 border-2
+}
+.testimony__paragraph{
+    @apply text-lg font-semibold
+}
+.testimony__img{
+    @apply pt-8
+}
+.testimony__name{
+    @apply text-xl font-bold pt-5
+}
+.footer{
+    @apply bg-hero-pattern pt-20 text-center
+}
+.footer__text-big{
+    @apply text-6xl font-bold mx-[22rem] 
+}
+.footer__text-small{
+    @apply  py-10
+}
+.footer__content{
+    @apply bg-darkish mt-32 text-left
+}
+.footer__cols{
+    @apply text-white px-[80px] py-20 grid grid-cols-5 
+}
+.footer__col-title{
+    @apply text-xl font-semibold
+}
+.footer__links{
+    @apply flex flex-col text-neutral-400 pt-2 space-y-2
+}
+.footer__link{
+    @apply text-lg
+}
+.footer__col--span{
+    @apply col-span-2
+}
+.footer__logo{
+    @apply text-4xl font-bold pb-10
+}
+.footer__form-content{
+    @apply pt-5 pr-28
+}
+.footer__form{
+    @apply bg-[#2B2E3C] rounded-[15px] flex justify-between
+}
+.footer__form-btn--color{
+    @apply bg-white text-black font-semibold hover:bg-darkish hover:text-white
+}
+.footer__input{
+    @apply bg-[#2B2E3C] px-4 rounded-[15px] outline-none
+}
+.footer__copyright{
+    @apply text-neutral-300 flex justify-between items-center px-[80px] pb-20
+}
+.footer__empty-div{
+    @apply border-b-2 border-b-neutral-500 w-[30rem]
+}
+.footer__copyright-content{
+    @apply flex gap-x-3
+}
+.footer__img{
+    @apply w-5 h-5
+}
+
+ /*=============================== products page ============================================== */
+
+.products-hero{
+    @apply mx-[110px] bg-hero-pattern bg-contain bg-left
+}
+.products-hero__content{
+    @apply flex items-center pt-20 gap-x-20
+}
+.products-hero__title{
+    @apply text-6xl font-bold
+}
+.products-hero__paragraph, .feedback__paragraph{
+    @apply text-lg
+}
+.products-hero__right{
+    @apply w-1/2
+}
+.products-hero__left{
+    @apply w-1/2 space-y-10
+}
+.products-hero__btns{
+    @apply flex gap-x-5
+}
+.products-hero__btn--light{
+    @apply bg-white text-black font-semibold hover:bg-darkish hover:text-white border-4 duration-300
+}
+.logos--products{
+    @apply py-20
+}
+.services__cards{
+    @apply grid grid-cols-3 gap-10 mt-20 bg-white bg-opacity-60 p-20 rounded-tr-[4rem]
+}
+.services__card{
+    @apply space-y-3
+}
+.services__card-title{
+    @apply text-2xl font-bold
+}
+.services{
+    @apply bg-gradient-to-br from-teal-100 via-indigo-100  to-slate-50 pt-20 pr-[80px]
+}
+.description, .time, .lead, .remote{
+    @apply px-[80px] flex gap-x-20 pt-28 items-center   
+}
+.description__left, .time__left, .lead__left, .remote__left{
+    @apply w-1/2 space-y-5 pr-20 
+}
+.description__right, .time__right, .lead__right, .remote__right{
+    @apply w-1/2 pr-32
+}
+.description__img, .time__img, .lead__img, .remote__img{
+    @apply w-[30rem]
+}
+.description__text-big, .time__text-big, .lead__text-big, .remote__text-big, .pricng-hero__text-big, .faq__text-big{
+    @apply text-5xl font-bold
+}
+.description__background{
+    @apply absolute -z-10 mt-[300px] right-[1000px] overflow-visible
+}
+.lead__background{
+    @apply absolute -z-10 ml-[400px]
+}
+.pricing-hero{
+    @apply px-[80px] pt-20 
+}
+.pricing-hero__bg{
+    @apply absolute -z-10 w-[2800px]
+}
+.pricing-hero__text{
+    @apply w-[500px] mx-auto
+}
+.pricng-hero__text-big{
+    @apply text-6xl font-bold text-center
+}
+.pricing-hero__text-small{
+    @apply text-lg pt-10 text-center px-20
+}
+.pricing-hero__btns{
+    @apply mx-auto my-10
+}
+.pricing-hero__plans{
+    @apply bg-lightViolet w-[300px] mx-auto py-5 px-2 rounded-[15px]
+}
+.pricing-hero__yearly{
+    @apply ml-10 font-bold
+}
+.pricing-hero__cards{
+    @apply flex gap-x-10
+}
+.pricing-hero__card{
+    @apply  bg-white w-1/3 rounded-[30px] pb-16
+}
+.pricing-hero__card-header{
+    @apply flex gap-x-5 py-16 border-b-4 px-10
+}
+.pricing-hero__card-title {
+    @apply text-4xl font-bold
+}
+.pricing-hero__card-subtitle{
+    @apply text-lg
+}
+.pricing-hero__card-body{
+    @apply space-y-5 py-10 px-10
+}
+.pricing-hero__card-content{
+    @apply flex gap-x-5
+}
+.pricing-hero__card-plan{
+    @apply text-lg font-bold
+}
+.pricing-hero__card-paragraph{
+    @apply px-20 text-center pb-10
+}
+.pricing-hero__card-description{
+    @apply text-4xl font-bold
+}
+.pricing-hero__card-period{
+    @apply pb-10
+}
+.pricing-hero__card-footer{
+    @apply text-center
+}
+.pricing-hero__card--different{
+    @apply bg-transparent border-blue-600 border-[6px]
+}
+.faq{
+    @apply  px-16 mx-24 mt-32 flex gap-x-10 bg-lightViolet py-20 rounded-[2rem] 
+}
+.faq__left{
+    @apply w-[800px] space-y-12
+}
+.faq__right{
+    @apply space-y-3
+}
+.faq__card{
+    @apply bg-white px-10 py-10 rounded-[2rem]
+}
+.faq__card-header{
+    @apply flex justify-between items-center
+}
+.faq__card-title{
+    @apply text-2xl font-bold pb-8
+}
+.contact-hero{
+    @apply mt-20
+}
+.contact-hero__title{
+    @apply text-6xl font-bold text-center
+}
+.contact-hero{
+    @apply bg-hero-pattern
+}
+.contact-hero__card{
+    @apply mx-[80px] px-16 py-20 my-20 rounded-[15px] bg-lightViolet
+}
+.contact-hero__card-title{
+    @apply text-4xl font-bold
+}
+.contact-hero__card-subtitle{
+    @apply text-xl pt-5
+}
+.contact-hero__content{
+    @apply flex
+}
+.contact-hero__form{
+    @apply w-1/2 pt-10 grid grid-cols-2 gap-x-5 space-y-3
+}
+.contact-hero__item{
+    @apply py-5 px-10 text-lg font-[500] outline-none rounded-lg
+}
+.contact-hero__item--span, .contact-hero__btn--span{
+    @apply col-span-2
+}
+.contact-hero__info-item{
+    @apply flex gap-x-5
+}
+.contact-hero__info{
+    @apply pt-10 space-y-10 ml-44
+}
+.contact-hero__info-big{
+    @apply text-2xl font-bold
+}
+.contact-hero__info-small{
+    @apply text-gray-500 text-lg
+}
+.contact-hero__bg{
+    @apply absolute -z-10 -mt-[100px]
+}
+.about__bg{
+    @apply absolute -z-10 transform scale-[1.5] opacity-80
+}
+.about__title{
+    @apply text-6xl font-bold
+}
+.about__paragraph{
+    @apply text-xl pt-10
+}
+.about__header{
+    @apply pt-28 text-center w-[800px] mx-auto
+}
+.about__imgs{
+    @apply flex gap-x-5 justify-center pt-20
+}
+.about__end{
+    @apply  mx-auto text-center w-[800px]
+}
+.about__team-title, .goals__title{
+    @apply  text-2xl pt-28 font-bold text-transparent bg-clip-text bg-gradient-to-tr from-[rgb(11,26,230)] via-[rgb(29,210,242)] to-[rgb(91,252,250)] 
+}
+.about__team-subtitle, .goals__subtitle, .corporate__title, .talented__title, .trending__subtitle, .blogpost__title{
+    @apply text-5xl font-bold pt-5 
+}
+.about__team-paragraph, .goals__paragraph, .corporate__description{
+    @apply text-xl pt-7 text-gray-600
+}
+.goals{
+    @apply px-[80px] pb-20 flex gap-x-16 bg-lightViolet mt-28
+}
+.corporate{
+    @apply px-[80px]
+}
+.corporate__header{
+    @apply text-center pt-28 pb-16
+}
+.corporate__cards{
+    @apply grid grid-cols-3 gap-16 bg-[#F9F0FB] rounded-[30px] px-16 py-16
+}
+.corporate__card{
+    @apply space-y-5
+}
+.corporate__card-title{
+    @apply text-3xl font-bold
+}
+.corporate__card-paragraph{
+    @apply text-lg text-slate-600
+}
+.talented{
+    @apply px-[80px] mt-28 flex
+}
+.talented__left{
+    @apply w-1/3
+}
+.talented__paragraph{
+    @apply text-lg text-slate-600 pt-7
+}
+.talented__cards{
+    @apply grid grid-cols-3 gap-5  mb-20
+}
+.talented__card{
+    @apply bg-slate-200 rounded-[10px]
+}
+.talented__card-name{
+    @apply text-2xl font-bold pt-5 px-5
+}
+.talented__card-position{
+    @apply text-lg text-slate-600 pb-5 px-5
+}
+.blog{
+    @apply text-center pt-28
+}
+.blog__header, .{
+    @apply w-[750px] mx-auto
+}
+.blog__title{
+    @apply text-6xl font-bold
+}
+.blog__paragraph{
+    @apply pt-10 text-lg
+}
+.trending{
+    @apply mx-[80px] mt-12 px-16 py-20 border-2 rounded-[25px] flex gap-20 relative
+}
+.trending__bg{
+    @apply absolute -z-10 mr-[600px] opacity-60
+}
+.trending__image-bg{
+    @apply absolute -z-10 opacity-80
+}
+.trending__title{
+    @apply text-2xl pb-5 font-bold text-transparent bg-clip-text bg-gradient-to-tr from-[rgb(11,26,230)] via-[rgb(29,210,242)] to-[rgb(91,252,250)] 
+}
+.trending__text{
+    @apply w-1/2
+}
+.trending__paragraph{
+    @apply text-lg pt-7
+}
+.trending__caption{
+    @apply font-[500] text-lg pt-10
+}
+.trending__image{
+    @apply w-1/2
+}
+.trending__img{
+    @apply w-[600px] h-[350px] object-cover rounded-[25px]
+}
+.posts{
+    @apply px-[100px] pt-44 pb-24
+}
+.posts__title{
+    @apply text-center text-6xl font-bold 
+}
+.posts__cards{
+    @apply pt-20 grid grid-cols-3 gap-y-20 gap-x-5
+}
+.posts__card{
+    @apply space-y-5 hover:bg-slate-100 hover:duration-500
+}
+.posts__card-title{
+    @apply text-2xl font-bold
+}
+.posts__card-paragraph{
+    @apply text-lg
+}
+.blogpost{
+    @apply px-[80px]
+}
+.blogpost__header{
+    @apply text-center pt-28 w-[800px] mx-auto pb-20
+}
+.blogpost__subtitle{
+    @apply pt-10
+}
+.headlines{
+    @apply w-[750px] mx-auto pt-20 space-y-7
+}
+.headlines__title{
+    @apply text-5xl font-bold
+}
+.headlines__smalltitle{
+    @apply text-4xl font-bold
+}
+.headlines__paragraph--special{
+    @apply text-lg border-l-4 pl-5
+}
